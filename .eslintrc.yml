@@ -1,0 +1,37 @@
+root: true
+env:
+  node: true
+  browser: true
+  es6: true
+parser: "@typescript-eslint/parser"
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:@typescript-eslint/eslint-recommended
+  - next
+  - next/core-web-vitals
+  - prettier
+plugins:
+  - "@typescript-eslint"
+  - "react"
+rules:
+  "react/react-in-jsx-scope": "off"
+  "@typescript-eslint/explicit-module-boundary-types": "off"
+parserOptions:
+  ecmaVersion: 2021
+  sourceType: module
+overrides:
+  - files:
+      - "**/__tests__/*.ts?(x)"
+      - "**/tests/unit/**/*.spec.ts?(x)"
+    env:
+      jest: true
+  - files:
+      - "*.js"
+    rules:
+      "@typescript-eslint/no-var-requires": "off"
+  - files:
+      - "*.tsx"
+    rules:
+      "react/prop-types": "off"
