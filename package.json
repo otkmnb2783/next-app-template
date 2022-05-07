@@ -1,5 +1,8 @@
 {
   "name": "next-app-template",
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped.",
+  "author": "Manabu OHTAKE",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "scripts": {
