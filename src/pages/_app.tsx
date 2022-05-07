@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 nprogress.configure({ showSpinner: false, speed: 400, minimum: 0.25 })
 
 function MyApp({ Component, pageProps, router }: AppProps) {
-  if (process.browser) {
+  if (window) {
     nprogress.start()
   }
   useEffect(() => {
