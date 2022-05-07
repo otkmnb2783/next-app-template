@@ -5,13 +5,13 @@ import { useEffect } from 'react'
 
 nprogress.configure({ showSpinner: false, speed: 400, minimum: 0.25 })
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   if (process.browser) {
     nprogress.start()
   }
   useEffect(() => {
     nprogress.done()
-  })
+  }, [router.pathname])
   return <Component {...pageProps} />
 }
 
