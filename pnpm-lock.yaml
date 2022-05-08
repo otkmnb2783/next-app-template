@@ -2,7 +2,6 @@ lockfileVersion: 5.3
 
 specifiers:
   '@types/node': 17.0.31
-  '@types/nprogress': ^0.2.0
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.3
   '@typescript-eslint/eslint-plugin': ^5.22.0
@@ -15,7 +14,6 @@ specifiers:
   husky: ^7.0.0
   lint-staged: ^12.4.1
   next: 12.1.6
-  nprogress: ^0.2.0
   postcss: ^8.4.13
   prettier: ^2.6.2
   react: 18.1.0
@@ -26,14 +24,12 @@ specifiers:
 
 dependencies:
   next: 12.1.6_react-dom@18.1.0+react@18.1.0
-  nprogress: 0.2.0
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
   react-error-boundary: 3.1.4_react@18.1.0
 
 devDependencies:
   '@types/node': 17.0.31
-  '@types/nprogress': 0.2.0
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.3
   '@typescript-eslint/eslint-plugin': 5.22.0_9817cbad956b8aa5d1e3d9ec99e4a1e4
@@ -251,10 +247,6 @@ packages:
 
   /@types/node/17.0.31:
     resolution: {integrity: sha512-AR0x5HbXGqkEx9CadRH3EBYx/VkiUgZIhP4wvPn/+5KIsgpNoyFaRlVe0Zlx9gRtg8fA06a9tskE2MSN7TcG4Q==}
-    dev: true
-
-  /@types/nprogress/0.2.0:
-    resolution: {integrity: sha512-1cYJrqq9GezNFPsWTZpFut/d4CjpZqA0vhqDUPFWYKF1oIyBz5qnoYMzR+0C/T96t3ebLAC1SSnwrVOm5/j74A==}
     dev: true
 
   /@types/prop-types/15.7.5:
@@ -1812,10 +1804,6 @@ packages:
     dependencies:
       path-key: 3.1.1
     dev: true
-
-  /nprogress/0.2.0:
-    resolution: {integrity: sha1-y480xTIT2JVyP8urkH6UIq28r7E=}
-    dev: false
 
   /object-assign/4.1.1:
     resolution: {integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=}
